@@ -1,0 +1,24 @@
+.main {
+    height: auto;
+  }
+  .left {
+    height: auto;
+  }
+  
+  /* Media query para pantallas más pequeñas (menos de 1000px) */
+  @media only screen and (max-width: 1024px) {
+    .container {
+      grid-template-columns: 1fr; /* Una sola columna */
+      grid-template-rows: auto; /* Las filas se ajustarán automáticamente al contenido */
+    }
+  
+    /* Cambia el orden de los elementos para que el contenido del 80% aparezca primero */
+    .colum-1 {
+      width: 100%;
+      grid-row: 1;
+    }
+  
+    .colum-2 {
+      grid-row: 2;
+    }
+  }
